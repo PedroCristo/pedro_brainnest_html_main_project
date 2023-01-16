@@ -1,0 +1,241 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,300;1,500&display=swap');
+
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.3s;
+}
+
+:root {
+    --interactive-color: rgb(252, 111, 17);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+.margin-top-5 {
+    margin-top: 5rem;
+}
+
+.margin-top-2 {
+    margin-top: 2rem;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.title {
+    font-size: 35px;
+    padding: 15px 25px;
+}
+
+.subtitle {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 35px 0 15px;
+}
+
+.title-container {
+    position: relative;
+}
+
+.divider {
+    position: absolute;
+    background-color: var(--interactive-color);
+    width: 120px;
+    height: 5px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 0 0 25px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.nav-active,
+.interactive-color {
+    color: var(--interactive-color) !important;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 25px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.content-img {
+    display: block;
+}
+
+.content-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(1, 1, 1, 0.5) 1px 5px 10px -1px;
+    z-index: 5;
+    background-color: #f7f7f7;
+}
+
+.header .logo img {
+    width: 70px;
+}
+
+.header .navbar ul{
+    display: flex;
+    flex-direction: row;
+    padding-right: 25px;
+}
+
+.header .navbar ul li{
+    margin-right: 15px;
+    position: relative;
+}
+
+.header .navbar ul li a{
+    font-size: 12px;
+    color: #000000;
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header .navbar ul li a:hover{
+    border: 1px solid var(--interactive-color);
+}
+
+/* Main Section */
+.main  {
+    z-index: -1;
+    position: relative;
+}
+
+/* About */
+#about .divider {
+    width: 380px;
+}
+
+#about .paragraph {
+    margin: 50px 0;
+}
+
+#about img,
+#sports img {
+    width: 650px;
+}
+
+/* Sports */
+#sports .content,
+#about .content {
+    width: 700px;
+    margin: 0 auto;
+}
+
+/* Movies */
+#movies-series .divider {
+    width: 290px;
+}
+
+#movies-series a:hover,
+#books a:hover {
+    color:#000000 !important;
+}
+
+/* Footer */
+.footer {
+    background-image: url(../images/general/hobbies_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 18px;
+    color: aliceblue;
+    z-index: 5;
+}
+
+.footer span {
+    color: var(--interactive-color);
+    font-weight: 400;
+}
+
+.footer .social-media {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: s;
+}
+
+.footer .social-media a {
+    margin: 15px 8px;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.footer .social-media a:hover {
+    margin: 15px 8px;
+    opacity: 0.7;
+}
+
+.footer .social-media a img {
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    width: 25px;
+}
