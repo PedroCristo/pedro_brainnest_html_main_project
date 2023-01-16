@@ -4,147 +4,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/images/general/brainnest_logo.png">
     <!-- Title -->
     <title> Brainnest - HTML Project </title>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <figure>
+     <!-- Header -->
+     <header class="header">
+        <div class="logo">
             <a href="https://www.brainnest.consulting/" 
                target="_blank">
-                    <img 
-                        src="../assets/images/general/brainnest_logo.png" 
-                        alt="Brainnest Logo"
-                    >
-            </a>
-        </figure>
-        <hr>
+                    <figure>
+                        <img 
+                            src="../assets/images/general/brainnest_logo.png" 
+                            alt="Brainnest Logo"
+                        >
+                    </figure>
+                </a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="../index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="../pages/sports.html"> Sports </a>
+                </li>
+                <li>
+                    <a href="../pages/books.html"> Books </a>
+                </li>
+                <li>
+                    <a class="nav-active"  href="../pages/movies_series.html"> Movies & Series </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main -->
-    <main>
-    <!-- navigation -->
-        <nav>
-            <h2> Navigation Menu </h2>
-            <table 
-                border="1" 
-                cellpadding="10" 
-                cellspacing="5">
-                    <tr>
-                        <th><a href="../index.html"> Home </a></th>
-                        <th><a href="./sports.html"> Sports </a></th>
-                        <th><a href="./books.html"> Books </a></th>
-                    </tr>
-            </table>
-            <br>
-            <hr>
-        </nav>
-
-        <!-- article content -->
+    <!-- article content -->
+    <main id="movies-series" class="text-center margin-top-2">
         <article>
-            <h2> Movies & Series </h2>
-            <div>
-                <ul>
-                    <li>
-                        <h3>
-                            <a 
-                              href="https://cutt.ly/A2SpB6n"
-                              target="_blank"> 
+            <h2 class="title"> Movies & Series </h2>
+            <div class="divider"></div>
+                <div class="container">
+                    <div class="content-img">
+                        <h3 class="subtitle">
+                            <a  class="interactive-color"
+                                href="https://cutt.ly/A2SpB6n"
+                                target="_blank"> 
                                     Narcos
                             </a>
                         </h3>
-                        <p> Narcos is a highly compelling television series that stands out as one of my personal favorites. 
-                            The show expertly narrates the story of Pablo Escobar from his perspective, blending elements of 
-                            action and mystery to create a thrilling and engaging viewing experience.
-                        </p>
                         <figure>
                             <img 
                                 src="../assets/images/movies_series/Narcos_season_3.png" 
                                 alt="Narcos Image"
                             >
-                            <figcaption> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Codex 632 Image </figcaption>
+                            <figcaption> Narcos Image </figcaption>
                         </figure>
-                    </li>
-                    <li>
-                        <h3>
-                            <a 
-                              href="https://www.disneyplus.com/en-gb/series/prison-break/7O2SFMVATNe5"
-                              target="_blank"> 
+                    </div>
+                    <div class="content-text">
+                        <p class="paragraph"> Narcos is a highly compelling television series that stands out as one of my personal 
+                            favorites. The show expertly narrates the story of Pablo Escobar from his perspective, blending elements of 
+                            action and mystery to create a thrilling and engaging viewing experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content-text">
+                        <p class="paragraph"> "Prison Break" is a gripping and intense television series that remains one of my all-time favorites. 
+                            The show's cleverly written script allows for each cast member and character to shine, resulting in a talented ensemble 
+                            cast. However, the standouts of the show are undoubtedly the two lead actors, whose performances elevate the series to new 
+                            heights of suspense and intrigue.
+                        </p>
+                    </div>
+                    <div class="content-img">
+                        <h3 class="subtitle">
+                            <a  class="interactive-color"
+                                href="https://www.disneyplus.com/en-gb/series/prison-break/7O2SFMVATNe5"
+                                target="_blank"> 
                                     Prison Break
                             </a>
                         </h3>
-                        <p> "Prison Break" is a gripping and intense television series that remains one of my all-time favorites. The show's 
-                            cleverly written script allows for each cast member and character to shine, resulting in a talented ensemble cast.
-                            However, the standouts of the show are undoubtedly the two lead actors, whose performances elevate the series to new 
-                            heights of suspense and intrigue.
-                        </p>
-                        <figure>
-                            <img 
-                                src="../assets/images/movies_series/prison_break.jpg" 
-                                alt="Prison Break Image"
-                            >
-                            <figcaption>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prison Break Image </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <h3>
-                            <a 
-                              href="https://www.imdb.com/title/tt3682448/"
-                              target="_blank"> 
-                                    Bridge of Spies (film) 
-                            </a>
-                        </h3>
-                        <p> This movie exceeded my expectations as a truly enjoyable film. Though I anticipated a political drama centered 
-                            around the Cold War, the movie delivered both compelling drama and unexpected humor. The collaboration between the Coen 
-                            Brothers and Steven Spielberg proved to be a winning combination, and Tom Hanks' outstanding performance solidified the 
-                            film's success.
-                        </p>
-                        <figure>
-                            <img 
-                                src="../assets/images/movies_series/bridge-of-spies-.jpeg" 
-                                alt="Bridg of Spies Image"
-                            >
-                            <figcaption>  &nbsp;&nbsp;&nbsp; Bridge of Spies Image</figcaption>
-                        </figure>
-                    </li>
-                </ul>
+                    <figure>
+                        <img 
+                            src="../assets/images/movies_series/prison_break.jpg" 
+                            alt="Prison Break Image"
+                        >
+                    <figcaption> Prison Break Image </figcaption>
+                </figure>
             </div>
-            <br><br>
+        </div>
+        <div class="container">
+            <div class="content-img">
+                <h3 class="subtitle">
+                    <a   class="interactive-color"
+                        href="https://www.imdb.com/title/tt3682448/"
+                        target="_blank"> 
+                            Bridge of Spies (film) 
+                    </a>
+                </h3>
+                <figure>
+                    <img 
+                        src="../assets/images/movies_series/bridge-of-spies-.jpeg" 
+                        alt="Bridg of Spies Image"
+                    >
+                    <figcaption> Bridge of Spies Image</figcaption>
+                </figure>
+                </div>
+                <div class="content-text">
+                    <p class="paragraph"> This movie exceeded my expectations as a truly enjoyable film. Though I anticipated a political drama centered 
+                        around the Cold War, the movie delivered both compelling drama and unexpected humor. The collaboration between the Coen 
+                        Brothers and Steven Spielberg proved to be a winning combination, and Tom Hanks' outstanding performance solidified the 
+                        film's success.
+                    </p>
+                </div>
+            </div>
         </article>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <br><br><br>
-        <hr>
-        <center>
-            <p> &copy; Pedro Cristo | 2023 </p>
-            <span>
-                <figure>
+    <footer class="footer margin-top-5">
+        <div class="overlay"></div>
+            <p><span> &copy; </span> Pedro Cristo | Brainnest Training | 2023 </p>
+            <div class="social-media">
                     <a href="https://www.linkedin.com/in/pedro-cristo/" 
                        target="_blank">
-                            <img 
-                                src="./assets/images/general/linkedin_logo.png" 
-                                alt="Linkdin Image"
-                            >
+                            <figure>
+                                <img 
+                                    src="../assets/images/general/linkedin_logo.png" 
+                                    alt="Linkdin Image"
+                                >
+                            </figure>
                     </a>
-                </figure>
-            </span>
-            <span>
-                <figure>
                     <a href="https://github.com/PedroCristo" 
                        target="_blank">
-                            <img 
-                                src="./assets/images/general/github_logo.png" 
-                                alt="GitHub Image"
-                            >
+                          <figure>
+                                <img 
+                                    src="../assets/images/general/github_logo.png" 
+                                    alt="GitHub Image"
+                                >
+                            </figure>
                     </a>
-                </figure>
-            </span>
-        </center>
+            </div>
     </footer>
 </body>
 </html>

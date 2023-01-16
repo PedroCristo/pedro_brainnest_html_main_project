@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/general/brainnest_logo.png">
     <!-- Title -->
@@ -11,91 +13,88 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <figure>
+    <header class="header">
+        <div class="logo">
             <a href="https://www.brainnest.consulting/" 
                target="_blank">
-                    <img 
-                        src="./assets/images/general/brainnest_logo.png" 
-                        alt="Brainnest Logo"
-                    >
-            </a>
-        </figure>
-        <hr>
+                    <figure>
+                        <img 
+                            src="./assets/images/general/brainnest_logo.png" 
+                            alt="Brainnest Logo"
+                        >
+                    </figure>
+                </a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a class="nav-active" href="../index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="./pages/sports.html"> Sports </a>
+                </li>
+                <li>
+                    <a href="./pages/books.html"> Books </a>
+                </li>
+                <li>
+                    <a href="./pages/movies_series.html"> Movies & Series </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main -->
-    <main>
-    <!-- navigation -->
-        <nav>
-            <h2> Navigation Menu </h2>
-            <table 
-                border="1" 
-                cellpadding="10" 
-                cellspacing="5">
-                    <tr>
-                        <th><a href="./pages/sports.html"> Sports </a></th>
-                        <th><a href="./pages/books.html"> Books </a></th>
-                        <th><a href="./pages/movies_series.html"> Movies & Series </a></th>
-                    </tr>
-            </table>
-            <br>
-            <hr>
-        </nav>
-
+    <main id="about" class="main margin-top-2 text-center">
         <!-- article content -->
         <article>
-            <h2> About my hobbies!! </h2>
-            <p> I would like to share with you some information about my hobbies and the things I enjoy doing when I am
-                not learning about coding. Throughout my life, I have been very active and have always enjoyed
-                participating in sports such as soccer, bodyboarding, and scuba diving. Unfortunately, since I am
-                currently living in Ireland, I don't have the opportunity to practice these sports as much as I would
-                like. Instead, I often spend my free time working out at the gym. In addition to staying active, I am
-                also very passionate about history and have been reading about it for quite some time. When I am looking
-                to relax, I enjoy watching films and series as a way to unwind.
-            </p>
-            <br><br>
+            <div class="title-container">
+                <h2 class="title"> About my hobbies!! </h2>
+                <div class="divider"></div>
+            </div>
+            <div class="content">
+                <p class="paragraph margin-top-2"> I would like to share with you some information about my hobbies and the 
+                    things I enjoy doing when I am not learning about coding. Throughout my life, I have been very active 
+                    and have always enjoyed participating in sports such as soccer, bodyboarding, and scuba diving. Unfortunately, 
+                    since I am currently living in Ireland, I don't have the opportunity to practice these sports as much as I would
+                    like. Instead, I often spend my free time working out at the gym. In addition to staying active, I am
+                    also very passionate about history and have been reading about it for quite some time. When I am looking
+                    to relax, I enjoy watching films and series as a way to unwind.
+                </p>
+            </div>
         </article>
         <figure>
-            <center>
-                <img 
-                    src="./assets/images/general/hobbies_img.jpg" 
-                    alt="Hobbies Image"
-                >
-                <figcaption> Hobbies Image </figcaption>
-            </center>
+            <img 
+                src="./assets/images/general/hobbies_img.jpg" 
+                alt="Hobbies Image"
+            >
+            <figcaption> Hobbies Image </figcaption>
         </figure>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <br><br><br>
-        <hr>
-        <center>
-            <p> &copy; Pedro Cristo | 2023 </p>
-            <span>
-                <figure>
+    <footer class="footer margin-top-5">
+        <div class="overlay"></div>
+            <p><span> &copy; </span> Pedro Cristo | Brainnest Training | 2023 </p>
+            <div class="social-media">
                     <a href="https://www.linkedin.com/in/pedro-cristo/" 
                        target="_blank">
-                            <img 
-                                src="./assets/images/general/linkedin_logo.png" 
-                                alt="Linkdin Image"
-                            >
+                            <figure>
+                                <img 
+                                    src="./assets/images/general/linkedin_logo.png" 
+                                    alt="Linkdin Image"
+                                >
+                            </figure>
                     </a>
-                </figure>
-            </span>
-            <span>
-                <figure>
                     <a href="https://github.com/PedroCristo" 
                        target="_blank">
-                            <img 
-                                src="./assets/images/general/github_logo.png" 
-                                alt="GitHub Image"
-                            >
+                          <figure>
+                                <img 
+                                    src="./assets/images/general/github_logo.png" 
+                                    alt="GitHub Image"
+                                >
+                            </figure>
                     </a>
-                </figure>
-            </span>
-        </center>
+            </div>
     </footer>
 </body>
 </html>

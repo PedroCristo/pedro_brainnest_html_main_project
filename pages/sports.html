@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/images/general/brainnest_logo.png">
     <!-- Title -->
@@ -11,56 +13,60 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <figure>
+    <header class="header">
+        <div class="logo">
             <a href="https://www.brainnest.consulting/" 
                target="_blank">
-                    <img 
-                        src="../assets/images/general/brainnest_logo.png" 
-                        alt="Brainnest Logo"
-                    >
+                    <figure>
+                        <img 
+                            src="../assets/images/general/brainnest_logo.png" 
+                            alt="Brainnest Logo"
+                        >
+                    </figure>
             </a>
-        </figure>
-        <hr>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="../index.html"> Home </a>
+                </li>
+                <li>
+                    <a class="nav-active" href="../pages/sports.html"> Sports </a>
+                </li>
+                <li>
+                    <a href="../pages/books.html"> Books </a>
+                </li>
+                <li>
+                    <a href="../pages/movies_series.html"> Movies & Series </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main -->
-    <main>
-    <!-- navigation -->
-        <nav>
-            <h2> Navigation Menu </h2>
-            <table 
-                border="1" 
-                cellpadding="10" 
-                cellspacing="5">
-                    <tr>
-                        <th><a href="../index.html"> Home </a></th>
-                        <th><a href="./books.html"> Books </a></th>
-                        <th><a href="./movies_series.html"> Movies & Series </a></th>
-                    </tr>
-            </table>
-            <br>
-            <hr>
-        </nav>
-
-        <!-- article content -->
+    <main id="sports" class="text-center margin-top-2">
+       <!-- article content -->
         <article>
-            <h2> Sports </h2>
-            <div>
-                <h4> Bodyboard </h4>
-                <p> I used to practice bodyboarding extensively in my hometown of Portugal, and I still 
-                    follow the competitions closely. Bodyboarding offers a unique combination of physical 
-                    activity, excitement, and connection with nature. The sport requires balance, control,
-                     and skill to maneuver the board, making it an excellent way to stay in shape and improve 
-                     overall fitness. The adrenaline rush of riding a wave and the sensation of gliding on 
-                     water is unparalleled. Additionally, spending time in the ocean observing the waves, sea 
-                     life, and feeling the power of the water is a special and unique experience. It can be 
-                     alming and therapeutic for the mind, body, and soul.
-                </p>
+            <div class="title-container">
+                <h2 class="title"> Sports </h2>
+                <div class="divider"></div>
             </div>
-            <div>
-                <h4> Gym </h4>
-                <p> In Ireland, I frequently visit the gym as it is an activity that brings me great pleasure. 
+            <div class="content">
+                <h4 class="subtitle interactive-color"> Bodyboard </h4>
+                <p class="paragraph"> I used to practice bodyboarding extensively in my hometown of Portugal, 
+                    and I still follow the competitions closely. Bodyboarding offers a unique combination of 
+                    physical activity, excitement, and connection with nature. The sport requires balance, control,
+                    and skill to maneuver the board, making it an excellent way to stay in shape and improve 
+                    overall fitness. The adrenaline rush of riding a wave and the sensation of gliding on 
+                    water is unparalleled. Additionally, spending time in the ocean observing the waves, sea 
+                    life, and feeling the power of the water is a special and unique experience. It can be 
+                    alming and therapeutic for the mind, body, and soul.
+                </p>
+                <hr>
+            </div>
+            <div class="content">
+                <h4 class="subtitle margin-top-2 interactive-color"> Gym </h4>
+                <p class="paragraph"> In Ireland, I frequently visit the gym as it is an activity that brings me great pleasure. 
                     Not only is it a great way to improve overall health and well-being, but it also provides 
                     the opportunity to work on maintaining a healthy weight and reducing the risk of chronic diseases. 
                     Additionally, it helps to improve overall fitness levels and body composition. On certain days, I 
@@ -72,46 +78,41 @@
             </div>
             <br><br>
         </article>
-        <figure>
-            <center>
+        <div class="text-center">
+            <figure>
                 <img 
                     src="../assets/images/sports/sports.jpg" 
                     alt="Hobbies Image"
                 >
                 <figcaption> Bodyboard and gym Image </figcaption>
-            </center>
-        </figure>
+            </figure>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <br><br><br>
-        <hr>
-        <center>
-            <p> &copy; Pedro Cristo | 2023 </p>
-            <span>
-                <figure>
+    <footer class="footer margin-top-5">
+        <div class="overlay"></div>
+            <p><span> &copy; </span> Pedro Cristo | Brainnest Training | 2023 </p>
+            <div class="social-media">
                     <a href="https://www.linkedin.com/in/pedro-cristo/" 
                        target="_blank">
-                            <img 
-                                src="./assets/images/general/linkedin_logo.png" 
-                                alt="Linkdin Image"
-                            >
+                            <figure>
+                                <img 
+                                    src="../assets/images/general/linkedin_logo.png" 
+                                    alt="Linkdin Image"
+                                >
+                            </figure>
                     </a>
-                </figure>
-            </span>
-            <span>
-                <figure>
                     <a href="https://github.com/PedroCristo" 
                        target="_blank">
-                            <img 
-                                src="./assets/images/general/github_logo.png" 
-                                alt="GitHub Image"
-                            >
+                          <figure>
+                                <img 
+                                    src="../assets/images/general/github_logo.png" 
+                                    alt="GitHub Image"
+                                >
+                            </figure>
                     </a>
-                </figure>
-            </span>
-        </center>
+            </div>
     </footer>
 </body>
 </html>
